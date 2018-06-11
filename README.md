@@ -20,7 +20,9 @@
 5. Clone GIT repo
 
    cd ~
+
    git clone https://github.com/pamvdam/docker-hw2.git
+
    cd docker-hw
 
 6. Build the container image.
@@ -82,3 +84,5 @@
    docker run -d -p 80:8081 --name myhelloworld helloworld:rc2
 
 15. Check the result with links and/or the browser on your laptop.
+
+
