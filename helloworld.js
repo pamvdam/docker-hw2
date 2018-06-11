@@ -13,7 +13,6 @@ var t_start = Date.now();
 
 app.use(express.static('public')) ;
 
-
 app.get('/', function (req, res) {
 
   var visitorAddr ; 
@@ -22,11 +21,9 @@ app.get('/', function (req, res) {
 
   visitorCount++ ;
    
-
-
   visitorAddr = req.connection.remoteAddress ;
   visitorAddr = visitorAddr.replace(/^.*:/, '') ;
-  res.send('<img src="/Azure.png" width=200px><H1>Hello World!</H1><br>Serving you from '+hostname+' <br>You are visitor: #'+visitorCount+' and coming from '+visitorAddr+'<br>Container is up for '+(t_now-t_start)+' ms') ;
+  res.send('<img src="/logo.svg" width=200px><H1>Hello World!</H1><br>Serving you from '+hostname+' <br>You are visitor: #'+visitorCount+' and coming from '+visitorAddr+'<br>Container is up for '+(t_now-t_start)+' ms') ;
   res.end() ;
 })
 

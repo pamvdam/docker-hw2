@@ -17,4 +17,10 @@
 
    az vm open-port -g azrgn01 -n azrgn01 --port 80
 
-5. 
+5. Clone GIT repo
+
+   cd ~
+   git clone https://github.com/pamvdam/docker-hw2.git
+   cd docker-hw
+
+6. 
