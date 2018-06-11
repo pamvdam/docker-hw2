@@ -13,6 +13,11 @@ var t_start = Date.now();
 
 app.use(express.static('public')) ;
 
+app.get('/health', function (req,res) {
+   res.send('All is well') ;
+   res.end() ;
+})
+
 app.get('/', function (req, res) {
 
   var visitorAddr ; 
