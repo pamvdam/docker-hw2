@@ -15,7 +15,7 @@
 
 4. Open port 80 on this VM
 
-   az vm open-port -g azrgn01 -n azrgn01 --port 80
+   az vm open-port -g azrgn01 -n azvmdockn01 --port 80
 
 5. Clone GIT repo
 
