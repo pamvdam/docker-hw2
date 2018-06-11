@@ -71,8 +71,14 @@
 
     docker images
 
-13. Try to run the newer version in a container
+13. Stop and remove the old running container
+ 
+    docker stop <containername>
+    docker rm <containername>
+
+
+14. Try to run the newer version in a container
 
    docker run -d -p 80:8081 --name myhelloworld helloworld:rc2
 
-14. Check the result with links and/or the browser on your laptop.
+15. Check the result with links and/or the browser on your laptop.
